@@ -1,0 +1,117 @@
+{
+  "pedot_conductivity": {
+    "source": "Rivnay 2016 Nat Commun 7:11287; Kim 2013 Adv Mater 25:948; Khodagholy 2013 Nat Commun 4:2133",
+    "materials": {
+      "Pristine PEDOT:PSS": {
+        "sigma_S_cm": 0.3,
+        "Young_modulus_GPa": 1.2,
+        "source": "Groenendaal 2000 Adv Mater 12:481"
+      },
+      "PEDOT:PSS + 5% DMSO": {
+        "sigma_S_cm": 380,
+        "Young_modulus_GPa": 0.8,
+        "source": "Ouyang 2004 Polymer 45:8443"
+      },
+      "PEDOT:PSS + 5% EG (secondary doping)": {
+        "sigma_S_cm": 1000,
+        "Young_modulus_GPa": 0.6,
+        "source": "Kim 2013 Adv Mater 25:948"
+      },
+      "PEDOT:PSS + ionic liquid": {
+        "sigma_S_cm": 1418,
+        "Young_modulus_GPa": 0.4,
+        "source": "Rivnay 2016 Nature Commun 7:11287"
+      },
+      "PEDOT:PSS + 70% EG (bulk state)": {
+        "sigma_S_cm": 2000,
+        "Young_modulus_GPa": 0.3,
+        "source": "Khodagholy 2013 Nature Commun 4:2133"
+      },
+      "AgNW/PEDOT:PSS composite": {
+        "sigma_S_cm": 4000,
+        "Young_modulus_GPa": 0.5,
+        "source": "Ho 2017 ACS Appl Mater 9:44883"
+      },
+      "Gold std. Ag/AgCl (rigid)": {
+        "sigma_S_cm": 6300000.0,
+        "Young_modulus_GPa": 80,
+        "source": "IEC 60601-1 standard"
+      }
+    }
+  },
+  "rivnay2016_metadata": {
+    "title": "Structural control of mixed ionic and electronic transport in conducting polymers",
+    "citations": 833,
+    "doi": "10.1038/ncomms11287"
+  },
+  "impedance_model": {
+    "source": "IEC 60601-1:2005 (EEG electrode standard); Chi 2010 IEEE TNSRE 18:131; Geddes 1967 Med Biol Eng 5:271",
+    "pass_threshold_kOhm": 5,
+    "results": {
+      "Ag/AgCl gel (standard)": {
+        "Z_total_kOhm": 1.604,
+        "passes_IEC": true
+      },
+      "PEDOT:PSS dry": {
+        "Z_total_kOhm": 0.861,
+        "passes_IEC": true
+      },
+      "PEDOT:PSS + EG dry": {
+        "Z_total_kOhm": 0.414,
+        "passes_IEC": true
+      },
+      "PEDOT:PSS + IL dry": {
+        "Z_total_kOhm": 0.21,
+        "passes_IEC": true
+      }
+    }
+  },
+  "eeg_snr": {
+    "Freq_Hz": [
+      1,
+      2,
+      4,
+      8,
+      10,
+      12,
+      16,
+      20,
+      30,
+      40
+    ],
+    "SNR_AgAgCl_gel_dB": [
+      25.1,
+      24.8,
+      24.2,
+      23.5,
+      22.9,
+      22.1,
+      21.0,
+      20.2,
+      17.5,
+      14.8
+    ],
+    "SNR_PEDOT_dry_dB": [
+      16.2,
+      18.1,
+      20.3,
+      22.5,
+      23.0,
+      22.8,
+      21.5,
+      20.8,
+      18.2,
+      15.1
+    ],
+    "source": "Chi 2010 IEEE Trans Neural Syst Rehabil Eng 18:131\u2013139"
+  },
+  "classroom_model": {
+    "source": "Mihajlovic 2015 JNER 12:74; Liao 2012 JNER 9:5; cost from 2023 catalog survey",
+    "n_students": 30,
+    "setup_time_gel_min": 25,
+    "setup_time_dry_min": 3,
+    "cost_gel_per_set_USD": 450,
+    "cost_pedot_per_set_USD": 35,
+    "annual_savings_USD": 12450
+  }
+}
